@@ -1,6 +1,6 @@
+.idea
 .DS_Store
-node_modules/
+*.log
 *.sass-cache*
 bower_components/
-stylesheets/*.css
-*.log
+node_modules/
