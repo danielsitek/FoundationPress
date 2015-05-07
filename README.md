@@ -8,6 +8,13 @@ All contributions are welcome!
 
 ## Requirements
 
+| Prerequisite       | How to check        | How to install
+| ------------------ | ------------------- | ------------- |
+| PHP >= 5.4.x       | `php -v`            | [php.net](http://php.net/manual/en/install.php) |
+| Node.js >= 0.12.x  | `node -v`           | [nodejs.org](http://nodejs.org/) |
+| Grunt >= 0.4.5     | `grunt --version`   | [gruntjs.com](http://gruntjs.com/getting-started) |
+| Bower >= 1.3.12    | `bower -v`          | [bower.io](http://bower.io/#install-bower) |
+
 **A brief explanation to the requirements** (feel free to skip this if you're a pro):
 
 Back in the days we wrote all styles in the style.css file. Then we realized that this could quickly create clutter and confusion, especially in larger projects. Foundation uses SASS (equivalent to LESS, used in Bootstrap). In short, SASS is a CSS pre-processor that allows you to write styles more effectively and tidy. 
@@ -15,13 +22,6 @@ Back in the days we wrote all styles in the style.css file. Then we realized tha
 To compile SASS files into one style sheet, we use a tool called Grunt. In short, Grunt is a task runner that automates repetitive tasks like minification, compilation, linting, etc. Grunt and Grunt plugins are installed and managed via npm, the Node.js package manager. Before setting up Grunt ensure that your npm is up-to-date by running ```npm update -g npm``` (this might require ```sudo``` on certain systems)
 
 Bower is a package manager used by Zurb to distribute Foundation. When you have Bower installed, you will be able to run ```foundation update``` in the terminal to update Foundation to the latest version. (After an upgrade you must run ```grunt build``` to recompile files).
-
-
-**Okay, so you'll need to have the following items installed before continuing.**
-
-  * [Node.js](http://nodejs.org)
-  * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
 ## Quickstart
 
