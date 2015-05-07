@@ -4,7 +4,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	function foundationpress_scripts() {
 
 	// Enqueue Main Stylesheet
-	wp_enqueue_style( 'Main Stylesheet', get_stylesheet_directory_uri() . '/css/foundation.css' );
+	wp_enqueue_style( 'Main Stylesheet', get_stylesheet_directory_uri() . '/dist/styles/main.css' );
 
 	// Deregister the jquery version bundled with wordpress
 	wp_deregister_script( 'jquery' );
@@ -23,13 +23,13 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to Gruntfile.js and see lines 67-88
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
-	wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '5.5.2', true );
+	wp_register_script( 'main-js', get_template_directory_uri() . '/dist/scripts/main.js', array('jquery'), '5.5.2', true );
 
 	// Enqueue all registered scripts
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'fastclick' );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'foundation' );
+	wp_enqueue_script( 'main-js' );
 
 	}
 
